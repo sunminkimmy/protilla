@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PROTILLA 프로띠아 — 어육 반죽으로 만든 저탄수 고단백 또띠아. 한 장 68kcal, 탄수화물 7g. 고래사어묵 신상품 기획.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PROTILLA 프로틴 또띠아 | 고래사어묵">
+<meta property="og:description" content="어육 반죽으로 만든 저탄수 고단백 또띠아. 한 장 68kcal, 탄수화물 7g.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>PROTILLA 프로틴 또띠아 | 고래사어묵</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Space+Grotesk:wght@400;500;700&amp;family=Gowun+Batang:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --teal:#1E9BB8;
+  --teal-deep:#0F5F72;
+  --teal-ink:#0A4553;
+  --ink-70:rgba(15,95,114,.72);
+  --ink-45:rgba(15,95,114,.46);
+  --cream:#FBF7F0;
+  --oat:#F0E8DA;
+  --line:#E0D5C3;
+  --wheat:#C9A24B;
+  --kr:"Pretendard Variable",Pretendard,-apple-system,sans-serif;
+  --serif:"Gowun Batang","Fraunces",serif;
+  --disp:"Fraunces",serif;
+  --mono:"Space Grotesk",var(--kr);
+  --max:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--kr);color:var(--teal-deep);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{position:relative}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+p{color:var(--ink-70)}
+
+/* grain */
+body::before{content:"";position:fixed;inset:0;z-index:99;pointer-events:none;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-45)}
+h2{font-family:var(--serif);font-size:clamp(30px,4.2vw,50px);font-weight:700;letter-spacing:-.02em;line-height:1.3}
+h2 em{font-style:normal;font-family:var(--disp);font-weight:600;font-variation-settings:"SOFT" 60,"WONK" 1;color:var(--teal)}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto;z-index:60;background:rgba(251,247,240,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(15,95,114,.1)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:var(--mono);font-weight:700;letter-spacing:.2em;font-size:15px;line-height:1.05}
+.brand small{display:block;font-family:var(--kr);font-size:10px;color:var(--ink-45);font-weight:700;letter-spacing:0}
+.menu{display:flex;gap:30px;font-size:14px;font-weight:600}
+.menu a{position:relative}
+.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:1.5px;background:var(--teal);transition:right .35s ease}
+.menu a:hover::after{right:0}
+.buy{background:var(--teal-deep);color:#fff;padding:10px 21px;border-radius:999px;font-size:13px;font-weight:700}
+.buy:hover{background:var(--teal)}
+
+/* HERO — teal banner echoes the package band */
+.hero{padding-top:64px;position:relative}
+.hero .banner{position:absolute;top:0;left:0;width:47%;height:76%;background:linear-gradient(170deg,#2AAEC9,var(--teal) 55%,#178AA6);
+  border-radius:0 0 130px 130px;z-index:0}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center;
+  padding-top:56px;padding-bottom:70px;min-height:calc(100vh - 64px)}
+.hero .copy{color:#fff;padding-right:24px}
+.hero .mark{font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:.42em;margin-bottom:22px;opacity:.9}
+.hero h1{font-family:var(--serif);font-size:clamp(36px,5vw,60px);font-weight:700;letter-spacing:-.02em;line-height:1.28}
+.hero h1 em{font-style:normal;display:inline-block;border-bottom:3px solid rgba(255,255,255,.55);padding-bottom:2px}
+.hero .lead{color:rgba(255,255,255,.9);margin-top:22px;font-size:16.5px;max-width:27em}
+.claims{display:flex;gap:7px;margin-top:28px;flex-wrap:wrap}
+.claim{border:1.5px solid rgba(255,255,255,.5);border-radius:999px;padding:6px 14px;font-size:12px;font-weight:700}
+.claim.solid{background:#fff;color:var(--teal-deep);border-color:#fff}
+.shot{position:relative}
+.shot img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:200px 200px 18px 18px}
+.ring{position:absolute;left:-34px;bottom:60px;width:128px;height:128px;border-radius:50%;background:var(--cream);
+  border:1.5px solid var(--teal);color:var(--teal-deep);display:grid;place-content:center;text-align:center;
+  box-shadow:0 16px 36px rgba(15,95,114,.16);z-index:3}
+.ring b{display:block;font-family:var(--disp);font-size:40px;line-height:1;font-weight:600;font-variation-settings:"SOFT" 60,"WONK" 1}
+.ring span{font-size:11px;font-weight:700;color:var(--ink-45);letter-spacing:.04em}
+
+/* MARQUEE */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--oat);overflow:hidden;padding:13px 0}
+.ticker ul{display:flex;gap:0;list-style:none;width:max-content;animation:slide 34s linear infinite}
+.ticker li{font-family:var(--mono);font-size:12.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--teal-deep);padding:0 30px;white-space:nowrap}
+.ticker li::after{content:"◆";margin-left:30px;color:var(--wheat);font-size:8px;vertical-align:middle}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* STATS */
+.stats{padding:78px 0 96px}
+.statgrid{display:grid;grid-template-columns:repeat(5,1fr)}
+.stat{padding:0 20px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font-family:var(--disp);font-size:clamp(30px,3.4vw,42px);font-weight:600;letter-spacing:-.02em;line-height:1.15;
+  font-variation-settings:"SOFT" 50,"WONK" 1;color:var(--teal-deep)}
+.stat span{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45)}
+
+/* STORY */
+.story{padding:0 0 116px}
+.story .wrap{display:grid;grid-template-columns:.88fr 1.12fr;gap:66px;align-items:center}
+.story figure{border-radius:180px 180px 18px 18px;overflow:hidden}
+.story figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.story h2{margin:14px 0 18px}
+.ledger{margin-top:36px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px;padding:19px 0;border-bottom:1px solid var(--line)}
+.row .label{font-weight:700;font-size:16px}
+.row .label small{display:block;font-weight:500;font-size:13px;color:var(--ink-45);margin-top:3px}
+.row .val{font-family:var(--mono);font-size:15px;font-weight:700;letter-spacing:.2em}
+.row.out .val{color:var(--ink-45);text-decoration:line-through;text-decoration-thickness:1.5px}
+.row.in .val{color:#fff;background:var(--teal);padding:5px 14px;border-radius:999px}
+
+/* THREE */
+.three{background:var(--teal-deep);color:#fff;padding:110px 0}
+.three .head{max-width:640px;margin-bottom:58px}
+.three .head .eyebrow{color:rgba(255,255,255,.5)}
+.three h2{color:#fff;margin:12px 0 14px}
+.three h2 em{color:#8FE0F0}
+.three .head p{color:rgba(255,255,255,.72)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.card figure{border-radius:14px 14px 90px 90px;overflow:hidden;margin-bottom:22px}
+.card figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.card .idx{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.24em;color:#8FE0F0;display:block;margin-bottom:9px}
+.card h3{font-family:var(--serif);font-size:21px;font-weight:700;margin-bottom:10px;letter-spacing:-.01em}
+.card p{color:rgba(255,255,255,.72);font-size:14.5px}
+
+/* USAGE */
+.usage{padding:110px 0}
+.usage .head{max-width:620px;margin-bottom:48px}
+.usage .head h2{margin:12px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tile{border-radius:16px;overflow:hidden;position:relative;background:var(--oat)}
+.tile img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .7s ease}
+.tile:hover img{transform:scale(1.05)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:60px 20px 20px;color:#fff;
+  background:linear-gradient(180deg,transparent,rgba(10,69,83,.82))}
+.tile b{display:block;font-family:var(--serif);font-size:19px;font-weight:700}
+.tile span{font-size:13px;opacity:.86}
+
+/* BAND */
+.band{background:linear-gradient(150deg,#2AAEC9,#178AA6);color:#fff;overflow:hidden}
+.band .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-top:96px;padding-bottom:96px}
+.band h2{color:#fff;margin-top:12px}
+.band h2 em{color:#FFE9B8}
+.band p{color:rgba(255,255,255,.9);margin-top:16px;font-size:16.5px}
+.band .eyebrow{color:rgba(255,255,255,.72)}
+.band img{border-radius:16px;box-shadow:0 26px 60px rgba(10,69,83,.3)}
+.steps{margin-top:32px;display:grid;gap:0}
+.step{display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:baseline;padding:14px 0;border-top:1px solid rgba(255,255,255,.28);font-size:15px;font-weight:600}
+.step:last-child{border-bottom:1px solid rgba(255,255,255,.28)}
+.step b{font-family:var(--mono);font-size:11px;letter-spacing:.18em;opacity:.75;font-weight:500}
+
+/* SPEC */
+.spec{padding:110px 0}
+.spec .wrap{display:grid;grid-template-columns:.78fr 1.22fr;gap:64px;align-items:start}
+.spec h2{margin-top:12px}
+.tabs{display:flex;gap:6px;margin-bottom:24px;flex-wrap:wrap}
+.tabs button{border:1.5px solid var(--line);background:transparent;font-family:var(--kr);font-size:13.5px;font-weight:700;
+  color:var(--ink-45);padding:9px 18px;border-radius:999px;cursor:pointer;transition:.25s}
+.tabs button[aria-selected="true"]{background:var(--teal-deep);border-color:var(--teal-deep);color:#fff}
+.panel[hidden]{display:none}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{padding:15px 4px;border-bottom:1px solid var(--line);text-align:left}
+th{width:34%;font-weight:700;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-45)}
+td{color:var(--teal-deep);font-weight:600}
+.notes{display:grid}
+.note{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:baseline;font-size:15px;color:var(--ink-70);
+  padding:16px 0;border-bottom:1px solid var(--line)}
+.note b{font-family:var(--disp);color:var(--teal);font-weight:600;font-size:17px;font-variation-settings:"SOFT" 60,"WONK" 1}
+
+/* CTA */
+.cta{background:var(--teal-ink);color:#fff;padding:104px 0;text-align:center}
+.cta h2{color:#fff;margin-bottom:14px}
+.cta p{color:rgba(255,255,255,.66);margin-bottom:32px;font-family:var(--mono);font-size:13px;letter-spacing:.16em}
+.cta a{display:inline-block;background:var(--cream);color:var(--teal-ink);font-weight:800;padding:16px 44px;border-radius:999px;font-size:15px}
+.cta a:hover{background:#8FE0F0}
+footer{background:var(--teal-ink);color:rgba(255,255,255,.4);padding:28px 0;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;border-top:1px solid rgba(255,255,255,.12)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+
+/* COMPARE */
+.compare{background:var(--oat);padding:104px 0}
+.compare .head{text-align:center;max-width:640px;margin:0 auto 48px}
+.compare .head h2{margin:12px 0 14px}
+.ctable{max-width:820px;margin:0 auto;background:var(--cream);border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.ctable .r{display:grid;grid-template-columns:1.1fr 1fr 1fr;align-items:center;border-bottom:1px solid var(--line)}
+.ctable .r:last-child{border-bottom:0}
+.ctable .r>*{padding:15px 18px}
+.ctable .r.h{background:var(--teal-deep);color:#fff;border-bottom:0}
+.ctable .r.h span{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+.ctable .r.h .me{background:var(--teal);font-weight:700;font-family:var(--kr);font-size:14px;letter-spacing:0;text-transform:none}
+.ctable .k{font-weight:700;font-size:14.5px}
+.ctable .v{font-family:var(--disp);font-size:22px;font-weight:600;font-variation-settings:"SOFT" 50,"WONK" 1;color:var(--ink-45);text-align:center}
+.ctable .me{text-align:center;background:rgba(30,155,184,.08);color:var(--teal-deep);font-family:var(--disp);font-size:24px;font-weight:700;font-variation-settings:"SOFT" 50,"WONK" 1}
+.ctable .foot{grid-column:1/-1;font-size:12px;color:var(--ink-45);background:transparent;text-align:left;font-family:var(--kr)}
+
+/* VOC */
+.voc{padding:104px 0}
+.voc .head{max-width:620px;margin-bottom:52px}
+.voc .head h2{margin:12px 0 14px}
+.voclist{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px}
+.voci{display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:start;padding:22px 0;border-top:1px solid var(--line)}
+.voci .tag{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  background:var(--teal);color:#fff;padding:5px 0;border-radius:999px;text-align:center}
+.voci q{display:block;font-family:var(--serif);font-size:16px;color:var(--teal-deep);line-height:1.5}
+.voci small{display:block;margin-top:7px;font-size:13.5px;color:var(--ink-45);font-weight:600}
+
+/* DELI */
+.deli{background:var(--teal-deep);color:#fff;padding:104px 0}
+.deli .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.deli h2{color:#fff;margin:12px 0 14px}
+.deli h2 em{color:#8FE0F0}
+.deli p{color:rgba(255,255,255,.74)}
+.stores{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.store{border:1px solid rgba(255,255,255,.24);border-radius:14px;padding:20px}
+.store b{display:block;font-family:var(--serif);font-size:19px;margin-bottom:5px}
+.store span{font-size:13px;color:rgba(255,255,255,.66)}
+.temp{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}
+.temp div{border-radius:999px;padding:9px 18px;font-size:13.5px;font-weight:700}
+.temp .cold{background:#8FE0F0;color:var(--teal-ink)}
+.temp .hot{background:#FFD08A;color:#5A3A0B}
+.deli figure{border-radius:16px;overflow:hidden}
+.deli figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+
+@media(max-width:900px){
+  .ctable .r{grid-template-columns:1fr .8fr .8fr}
+  .ctable .r>*{padding:12px 10px}
+  .ctable .v{font-size:18px}.ctable .me{font-size:19px}
+  .voclist{grid-template-columns:1fr;gap:0}
+  .deli .wrap{grid-template-columns:1fr;gap:34px}
+}
+
+
+
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.reveal.on{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .menu{display:none}
+  .hero .banner{width:100%;height:58%;border-radius:0 0 60px 60px}
+  .hero .wrap{grid-template-columns:1fr;gap:34px;min-height:0;padding-top:40px}
+  .hero .copy{padding-right:0}
+  .ring{left:auto;right:14px;bottom:14px;width:100px;height:100px}
+  .statgrid{grid-template-columns:repeat(2,1fr);gap:26px 0}
+  .stat{padding:0 16px}
+  .stat:nth-child(odd){border-left:0;padding-left:0}
+  .story .wrap,.band .wrap,.spec .wrap{grid-template-columns:1fr;gap:36px}
+  .cards,.grid{grid-template-columns:1fr}
+  .band .wrap{padding-top:64px;padding-bottom:64px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}.ticker ul{animation:none}}
+</style>
+</head>
+<body class="">
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">PROTILLA<small>고래사어묵</small></a>
+    <div class="menu">
+      <a href="#story">브랜드</a>
+      <a href="#value">특징</a>
+      <a href="#usage">활용법</a>
+      <a href="#spec">제품정보</a>
+    </div>
+    <a class="buy" href="#buy">구매하기</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="banner"></div>
+  <div class="wrap">
+    <div class="copy">
+      <div class="mark">고래사어묵 X<span style="letter-spacing: 5.88px;">PROTILLA</span></div>
+      <h1>세상에 없던<div>어육으로 만든&nbsp;<span style="font-size: clamp(36px, 5vw, 60px); letter-spacing: -0.02em;">또띠아</span></div></h1>
+      <p class="lead"><br></p>
+      <div class="claims">
+        <span class="claim solid">저탄수 고단백</span>
+        <span class="claim">프리미엄 어육 원료</span>
+        <span class="claim">쫄깃한 식감</span>
+        <span class="claim">68kcal / 한 장</span>
+        <span class="claim">HACCP 인증</span>
+      </div>
+    </div>
+    <div class="shot">
+      <div class="ring"><b>68</b><span>kcal / 한 장</span></div>
+      <img decoding="async" fetchpriority="high" src="assets/00-protilla-sheets.webp" alt="한 장씩 떼어지는 프로띠아">
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <ul>
+    <li>프리미엄 어육 원료</li><li>저탄수 고단백</li><li>쫄깃한 식감</li><li>68kcal 한 장</li><li>20cm</li><li>5매입 225g</li><li>진공포장</li>
+    <li>프리미엄 어육 원료</li><li>저탄수 고단백</li><li>쫄깃한 식감</li><li>68kcal 한 장</li><li>20cm</li><li>5매입 225g</li><li>진공포장</li>
+  </ul>
+</div>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="statgrid reveal on">
+      <div class="stat"><b>68</b><span>kcal / 1장</span></div>
+      <div class="stat"><b>6g</b><span>탄수화물 / 1장</span></div>
+      <div class="stat"><b>20cm</b><span>랩 싸기 좋은 크기</span></div>
+      <div class="stat"><b>5매</b><span>225g · 45g×5</span></div>
+      <div class="stat"><b>0~10℃</b><span>냉장 · 진공포장</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <figure class="reveal on"><img loading="lazy" decoding="async" src="assets/01-salad-wrap-hero.webp" alt="프로띠아로 만든 샐러드랩"></figure>
+    <div class="reveal on">
+      <span class="eyebrow">Why Protilla</span>
+      <h2>밀가루가 없어 누구나 편하게!</h2>
+      <p>기능을 여러 개 붙이는 대신 원료 하나를 바꿨습니다. 밀가루가 하던 일을 어육 단백질이 대신하면, 같은 또띠아 한 장이 전혀 다른 영양을 갖게 됩니다. 1963년부터 생선살만 다뤄온 고래사어묵이기에 가능한 선택입니다.</p>
+      <div class="ledger">
+        <div class="row out"><div class="label">밀가루 ZERO!<small>탄수화물 7g</small></div><div class="val"><br></div></div>
+        <div class="row in"><div class="label">어육 단백질 UP!<small>&nbsp;단백질 6g</small></div><div class="val"><br></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="compare">
+  <div class="wrap">
+    <div class="head reveal on">
+      <span class="eyebrow">Nutrition</span>
+      <h2>또띠아 한 장이면<br><em>더 많은 단백질</em>을!</h2>
+      <p>일반 또띠아와 나란히 놓고 비교했습니다.</p>
+    </div>
+    <div class="ctable reveal on">
+      <div class="r h"><span>1장 기준</span><span style="text-align:center">일반 또띠아 50g</span><span class="me">프로띠아 45g</span></div>
+      <div class="r"><div class="k">열량</div><div class="v">130kcal</div><div class="me">68kcal</div></div>
+      <div class="r"><div class="k">탄수화물</div><div class="v">21g</div><div class="me">7g</div></div>
+      <div class="r"><div class="k">당류</div><div class="v">2g</div><div class="me">1g</div></div>
+      <div class="r"><div class="k">단백질</div><div class="v">4g</div><div class="me">18g</div></div>
+      <div class="r"><div class="k">지방</div><div class="v">4.1g</div><div class="me">1.5g</div></div>
+      <div class="r"><div class="foot">총 내용량 — 일반 또띠아 250g(50g×5) / 프로띠아 225g(45g×5)</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="three" id="value">
+  <div class="wrap">
+    <div class="head reveal on">
+      <span class="eyebrow">Three Points</span>
+      <h2>어육 단백질의 Point&nbsp;<em>세 가지!</em></h2>
+      <p>원료 하나를 바꿨을 뿐인데, 세 가지가 한꺼번에 따라왔습니다.</p>
+    </div>
+    <div class="cards reveal on">
+      <div class="card">
+        <figure><img loading="lazy" decoding="async" src="assets/02-protilla-peel.webp" alt="한 장씩 떼어지는 프로띠아"></figure>
+        <span class="idx">POINT 01</span>
+        <h3>저탄수 고단백</h3>
+        <p>한 장 68kcal, 탄수화물 7g. 일반 또띠아 대비 탄수화물은 3분의 1로 줄이고 단백질은 크게 올렸습니다.</p>
+      </div>
+      <div class="card">
+        <figure><img loading="lazy" decoding="async" src="assets/03-protilla-dip.webp" alt="소스에 찍어 먹는 프로띠아 랩"></figure>
+        <span class="idx">POINT 02</span>
+        <h3>쫄깃한 식감</h3>
+        <p>어육 반죽 특유의 쫄깃함. 담백해서 어떤 속재료와도 부딪히지 않고, 가득 넣고 말아도 터지지 않습니다.</p>
+      </div>
+      <div class="card">
+        <figure><img loading="lazy" decoding="async" src="assets/04-protilla-pizza.webp" alt="프로띠아 피자"></figure>
+        <span class="idx">POINT 03</span>
+        <h3>다양한 활용</h3>
+        <p>랩·피자·타코부터 나초칩·김밥까지. 식사부터 간식까지 폭넓게 쓰이는 한 장입니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="voc">
+  <div class="wrap">
+    <div class="head reveal on">
+      <span class="eyebrow">Voice of Customer</span>
+      <h2>고객에게 더 편하게</h2>
+      <p>또띠아 카테고리의 리뷰를 모아, 실제로 불편했던 지점부터 사양으로 바꿨습니다.</p>
+    </div>
+    <div class="voclist reveal on">
+      <div class="voci"><div class="tag">트레이</div><div><q>트레이가 있으니까 보관도 쉽고 찾기도 쉬워요</q><small>→ 전용 트레이 적용</small></div></div>
+      <div class="voci"><div class="tag">냉장</div><div><q>냉동 보관했더니 또띠아끼리 붙어서 잘 안 떼어져요</q><small>→ 냉장 유통(0~10℃)</small></div></div>
+      <div class="voci"><div class="tag">20cm</div><div><q>20cm라서 랩 싸기 편해요</q><small>→ 지름 20cm로 고정</small></div></div>
+      <div class="voci"><div class="tag">5매</div><div><q>다이어트에 부담 없는 칼로리로 챙기고 싶어요</q><small>→ 한 장 68kcal, 5일치 식단 5매 구성</small></div></div>
+      <div class="voci"><div class="tag">진공포장</div><div><q>냉장인데 유통기한이 짧으면 다 못 먹어요</q><small>→ 진공 포장으로 유통기한 확보</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="usage" id="usage">
+  <div class="wrap">
+    <div class="head reveal on">
+      <span class="eyebrow">Everyday</span>
+      <h2>한 장으로 <em>한 끼</em></h2>
+      <p>식사부터 간식까지. 냉장고에 있는 재료를 올려 말기만 하면 됩니다.</p>
+    </div>
+    <div class="grid reveal on">
+      <figure class="tile"><img loading="lazy" decoding="async" src="assets/05-tile-salad-wrap.webp" alt="샐러드랩"><figcaption><b>샐러드랩</b><span>채소 + 닭가슴살 + 소스</span></figcaption></figure>
+      <figure class="tile"><img loading="lazy" decoding="async" src="assets/06-tile-dip-wrap.webp" alt="소스에 찍어 먹는 랩"><figcaption><b>어육 나쵸</b><span>바삭하게 구워 간식으로</span></figcaption></figure>
+      <figure class="tile"><img loading="lazy" decoding="async" src="assets/07-tile-tortilla-pizza.webp" alt="또띠아 피자"><figcaption><b>또띠아 피자</b><span>토핑 올려 에어프라이어 5분</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="reveal on">
+      <span class="eyebrow">Recipe</span>
+      <h2>밀가루 대신 <em>프로띠아</em></h2>
+      <p>도우를 프로띠아 한 장으로 바꾸면,&nbsp;</p><div>피자는 밀가루가 들어가지 않은&nbsp; 단백질 메뉴가 됩니다.&nbsp;</div><div>얇게 구워져 가장자리는 바삭하고 가운데는 쫀득합니다.</div><p></p>
+      <div class="steps">
+        <div class="step"><b>STEP 01</b><span>소스를 얇게 펴 바르고</span></div>
+        <div class="step"><b>STEP 02</b><span>토핑과 치즈를 올려</span></div>
+        <div class="step"><b>STEP 03</b><span>에어프라이어 180℃ 5분 돌리면 끝!</span></div>
+      </div>
+    </div>
+    <div class="reveal on"><img loading="lazy" decoding="async" src="assets/04-protilla-pizza.webp" alt="프로띠아로 만든 페퍼로니 피자"></div>
+  </div>
+</section>
+
+
+<section class="deli">
+  <div class="wrap">
+    <div class="reveal on">
+      <span class="eyebrow">Offline</span>
+      <h2>공항에서, 부산에서<div><h2 style="font-family: &quot;Gowun Batang&quot;, Fraunces, serif; outline: rgba(255, 255, 255, 0.5) solid 1.6px; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">먼저 <span style="font-family: Fraunces, serif; font-variation-settings: &quot;SOFT&quot; 60, &quot;WONK&quot; 1; color: rgb(143, 224, 240);">맛보는 한정 메뉴</span></h2></div></h2>
+      <p>고래사어묵 해운대점과 인천공항점에서 프로띠아를 델리 메뉴로 만나실 수 있습니다.&nbsp;</p><div>다양한 문화권 고객을 위해 차가운 메뉴와 따뜻한 메뉴를 함께 운영합니다.</div><p></p>
+      <div class="temp">
+        <div class="cold">COLD · 프로띠아 랩</div>
+        <div class="hot">HOT · 브리또</div>
+      </div>
+      <div class="stores">
+        <div class="store"><b>인천공항점</b><span>활발한 유동 인구</span></div>
+        <div class="store"><b>해운대점</b><span>관광·체험 유입</span></div>
+      </div>
+    </div>
+    <figure class="reveal on"><img loading="lazy" decoding="async" src="assets/06-tile-dip-wrap.webp" alt="델리 메뉴로 제공되는 프로띠아 랩"></figure>
+  </div>
+</section>
+
+<section class="spec" id="spec">
+  <div class="wrap">
+    <div class="reveal on">
+      <span class="eyebrow">Product Info</span>
+      <h2>프로띠아</h2>
+    </div>
+    <div class="reveal on">
+      <div class="tabs" role="tablist">
+        <button role="tab" aria-selected="true" aria-controls="p1">기본 사양</button>
+        <button role="tab" aria-selected="false" aria-controls="p2">보관과 조리</button>
+        <button role="tab" aria-selected="false" aria-controls="p3">이렇게 드세요</button>
+      </div>
+      <div class="panel" id="p1" role="tabpanel">
+        <table>
+          <tbody><tr><th>제품명</th><td>프로띠아 (프로틴 또띠아)</td></tr>
+          <tr><th>중량</th><td>225g · 5매입 (45g × 5장)</td></tr>
+          <tr><th>크기</th><td>지름 20cm (20cm x 20xm)</td></tr>
+          <tr><th>열량</th><td>68kcal (1장 45g 기준)</td></tr>
+          <tr><th>단백질</th><td>30g (1장 6g 기준)</td></tr>
+          <tr><th>주원료</th><td>프리미엄 어육 단백질</td></tr>
+          <tr><th>인증</th><td>HACCP</td></tr>
+          <tr><th>포장</th><td>진공포장 + 트레이</td></tr>
+          <tr><th>보관</th><td>냉장 0~10℃</td></tr>
+        </tbody></table>
+      </div>
+      <div class="panel" id="p2" role="tabpanel" hidden="">
+        <div class="notes">
+          <p class="note"><b>01</b><span>냉장(0~10℃)에 보관하세요. 개봉 후에는 밀봉해 14일 안에 드시는 것을 권합니다.</span></p>
+          <p class="note"><b>02</b><span>팬에 기름 없이 앞뒤로 20초씩. 살짝 데우면 식감이 가장 살아납니다.</span></p>
+          <p class="note"><b>03</b><span>전자레인지는 10초면 충분합니다. 오래 돌리면 수분이 날아가 뻣뻣해집니다.</span></p>
+          <p class="note"><b>04</b><span>냉장고에서 꺼내 그대로 드셔도 됩니다. 데우지 않아도 잘 접힙니다.</span></p>
+        </div>
+      </div>
+      <div class="panel" id="p3" role="tabpanel" hidden="">
+        <div class="notes">
+          <p class="note"><b>01</b><span>샐러드랩 — 채소와 닭가슴살을 넣어 한 끼를 가장 간단하게.</span></p>
+          <p class="note"><b>02</b><span>브리또 — 밥과 속재료를 넣어 든든한 한 끼로.</span></p>
+          <p class="note"><b>03</b><span>또띠아 피자 — 도우 대신 한 장, 에어프라이어 5분.</span></p>
+          <p class="note"><b>04</b><span>어묵 나초칩 · 어묵 김밥 — 잘라 굽거나 말아서 간식으로.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="buy">
+  <div class="wrap">
+    <h2>새로운 식사의 기준. 프로띠아</h2>
+    <p>5매입 225g · 냉장배송</p>
+    <a href="#">구매하러 가기</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>GORAESA · PROTILLA</span>
+    <span>© 2026 ALL RIGHTS RESERVED</span>
+  </div>
+</footer>
+
+
+
+
+<script>
+const tabs=[...document.querySelectorAll('[role=tab]')];
+tabs.forEach(t=>t.addEventListener('click',()=>{
+  tabs.forEach(x=>{x.setAttribute('aria-selected',x===t);
+    document.getElementById(x.getAttribute('aria-controls')).hidden = x!==t;});
+}));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+
+</script></body></html>
